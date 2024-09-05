@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKOUT</title>
+</head>
+<style>
+    body{
+        padding: 0%;
+        margin: 0%;
+        /* height: 1000px; */
+    }
+.header1
+{
+    height: 100px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px 0px 8px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header1_1{
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+}
+.header1_1 span{
+    
+}
+.header1_1 img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+.header1_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header{
+    position: relative;
+    top: 30px;
+}
+.header1_1_span{
+    display: flex;
+    gap: 20px;
+    
+    
+}
+.header1_1_span img{
+    height: 15px;
+    width: 19px;
+    position: absolute;
+    left: 500px;
+}
+.body{
+    border-right: 1px solid black;
+    padding: 20px;
+    position: relative;
+    top: 130px;
+    height: 800px;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+#forborder{
+    border-bottom: 1px solid black;
+}
+h4{
+    display: inline;
+}
+#input1{
+    width: 350px;
+    border: none;
+    padding:10px;
+    border-bottom: 1px solid black;
+}
+#input1:hover,.input2:hover,#input3:hover,#input4:hover{
+    box-shadow: 5px 5px 5px skyblue;
+}
+/* #div2{
+    display: flex;
+    border: 2px solid black;
+    justify-content:space-around;
+    width: 350px;
+} */
+ .input2{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+ }
+#input3{
+    width: 350px;
+    padding:10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+select{
+width: 250px;
+padding: 10px;
+border: none;
+border-bottom: 1px solid black;
+}
+#input4{
+    padding: 10px;
+    width: 220px;
+    border: none;
+    border-bottom:1px solid black ;
+}
+.sidebar{
+    border: 2px solid black;
+    position: relative;
+    left: 920px;
+    width: 320px;
+    height: 300px;
+    bottom: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#sidebar_div{
+    display: flex; 
+    padding: 15px;
+}
+#sidebar_div2{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.footor{
+    /* border: 2px solid black; */
+    position: relative;
+    bottom: 110px;
+    height: 300px;
+    width: 880px;
+}
+#footor_1{
+    display: flex;
+    padding-bottom: 35px;
+    justify-content: space-between;
+}
+.footor2{
+    padding-bottom: 30px;
+    /* border: 2px solid black; */
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footor a{
+    color: black;
+    text-decoration: none;
+}
+.footor button{
+    padding: 15px;
+    position: relative;
+    left: 800px ;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+}
+.footor button:hover{
+    background-color: black;
+    color: white;
+}
+.scureaccount{
+    height: 200px;
+    position: relative;
+    top: 100px;
+    /* border: 2px solid black; */
+}
+.scureaccount1{
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+    padding-top: 22px;
+}
+.scureaccount2{
+    /* border: 1px solid black; */
+    height: 140px;
+}
+.scureaccount svg{
+    height: 30px;
+    width: 30px;
+}
+
+.required::after{
+    content: "*";
+    color: red;
+}
+.ab{
+    /* border: 2px solid black; */
+    /* height: 100px; */
+    position: relative;
+    left: 450px;
+    bottom: 90px;
+    width: 200px;
+    height: 7px;
+    background-color: black;
+    /* border-radius: 20px; */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.ac{
+    /* border: 2px solid black; */
+    /* height: 100px; */
+    position: relative;
+    left: 640px;
+    bottom: 97px;
+    width: 200px;
+    height: 8px;
+    background-color: #E4E4E4;
+    /* border-radius: 20px; */
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+.tick{
+    border: 6px solid black;
+    border-radius: 100px;
+    height: 25px;
+    left: 70px;
+    background-color: white;
+    position:relative;
+    bottom: 14px;
+    width: 25px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.tick2{
+    border: 6px solid #E4E4E4;
+    border-radius: 100px;
+    height: 25px;
+    left: 70px;
+    background-color: white;
+    position:relative;
+    bottom: 14px;
+    width: 25px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tick svg{
+    width: 20px;
+    height: 20px;
+}
+</style>
+<body>
+    <div class="header1">
+        <span class="header">CONTINUE SHOPPING </span>
+        <div class="header1_1">
+           <span class="header1_1_span a" > <span>SIGN IN</span>
+            <span><img src="https://www.junaidjamshed.com/static/version1721294059/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/pak-flag.png" alt=""></span>
+            <span class="a">TRACKING INFO</span>
+            <span class="a">CORPORATE INQUIRY</span></span>
+            <span><img src="https://www.junaidjamshed.com/media/logo/stores/1/new_logo.png" alt=""></span>
+        </div>
+        <div class="header1_2">
+            <span>+92 21 111 112 111</span>
+            <span>ESHOP@JUNAIDJAMSHED.COM</span>
+        </div>
+    </div>
+    
+    <div class="scureaccount">
+
+       <div class="scureaccount1"> <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"/></svg></span>
+        <span><H1 style="display: inline;">SECURE CHECKOUT</H1></span>
+    </div>
+    <div class="scureaccount2">
+        
+    </div>
+
+        <div class="ab">
+            <div class="tick">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                
+            </div>
+            <span style="font-size: 25px; position: relative; left: 50px;"><b>Shipping</b></span>
+        </div>
+        <div class="ac">
+            <div class="tick2">
+                <b>2</b>
+            </div>
+            <span style="font-size: 20px; position: relative; left: 20px; top:7px
+            ; color: grey;">Review & Payments</span>
+        </div>
+
+
+    </div>
+    
+
+
+
+
+    <div class="body">
+        
+       <h2>Shipping Address</h2>
+       <b><label for="imp" class="required">Email Address</label></b><input type="email" name="required" id="input1">
+       <span id="forborder" style="padding-bottom: 50px;">You can create an account after checkout.</span>
+        <div id="div2">
+           <span> <h4><label for="imp" class="required">First Name</label></h4>
+            <span><h4 style="position: relative; left: 100px;"><label for="imp" class="required">Last Name</label></h4>
+        </div>
+        <div>
+            <span><input class="input2" type="text"></span>
+            <span><input class="input2" type="text"></span>
+        </div>
+        <h3><label for="imp" class="required">Street Address</label></h3><span><input id="input3" type="address"></span>
+        <div>
+            <span> <h4><label for="imp" class="required">Country</label></h4>
+             <span style="position: relative; left: 200px;"><h4>State/Province</h4>
+         </div>
+         <div>
+            <span><select name="" id="">
+                <option value="">Pakistan</option>
+                <option value="">Newzealand</option>
+                <option value="">India</option>
+                <option value="">Europe</option>
+                <option value="">Oman</option>
+                <option value="">Australia</option>
+                <option value="">China</option>
+            </select></span>
+            <span><input class="input2" type="text"></span>
+        </div>
+        <div>
+            <span> <h4>City</h4>
+             <span><h4 style="position: relative; left: 230px;">Zip/Postal Code</h4>
+         </div>
+         <div>
+            <span><select name="" id="">
+                <option value="">Lahore</option>
+                <option value="">Islamabad</option>
+                <option value="">Karachi</option>
+                <option value="">Bahawalpur</option>
+                <option value="">Bahawalnagar</option>
+                <option value="">Azaad Kashmir</option>
+                <option value="">Balakot</option>
+            </select></span>
+            <span><input class="input2" type="text"></span>
+        </div>
+        <H3 ><label for="imp" class="required">Phone Number</label></H3><input id="input4" type="text">
+
+    </div>
+    <div class="sidebar">
+        <h1>Order Summary</h1>
+        <select name="" id="">
+        <option value="">1 Item in Cart</option>
+        </select>
+        <div id="sidebar_div"><img width="100px" height="100px" src="https://www.junaidjamshed.com/media/catalog/product/2/4/24-607_1_.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=150&width=150" alt="">
+        <div id="sidebar_div2">
+            <span><b>PINK SLUB</b></span>
+            <span>UNSTITCHED 3PC |</span>
+            <span>JLAWN-S-24-607</span>
+            <span>Qty:1</span>
+            <span>PKR 7,180.00</span>       
+        </div>
+        </div>
+    </div>
+    <div class="footor">
+        <div id="footor_1">
+            <span style="display: inline;"><b style="font-size: 25px;">Shipping Methods</b></span>
+            <a href="">See our Shipping Policy</a>
+        </div>
+        <div class="footor2">
+            <span><b>Select <br>Method</b></span>
+            <span><b>Price</b></span>
+            <span><b>Method Title</b></span>
+            <span><b>Carrier Title</b></span>
+        </div>
+        <div class="footor2">
+            <span><input checked type="radio" name="" id=""></span>
+            <span><b>PKR 149.00</b></span>
+            <span>Fixed</span>
+            <span>Local Shipment</span>
+        </div>
+        <a href="/submitpage.html"><button>SUBMIT</button></a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+    }
+.header{
+    /* background-color: rgba(228, 154, 58, 0.85); */
+    background-color: rgb(70, 4, 33);
+    height: 300px;
+    position: relative;
+    /* top: 100px;    */
+}
+#img1{
+    width: 70px;
+    border-radius: 200px;
+    position: absolute;
+
+}
+.header1{
+    position: relative;
+    top: 30px;
+    left: 110px;
+    color: white;
+    
+}
+.header2{
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+#para1{
+    position: absolute;
+    left: 84px;
+    color: white;
+}
+.nav ul{
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    left: 674px;
+    background-color:rgba(133, 195, 11, 0.223);
+    padding: 10px;
+    width: 32.5%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+.nav ul li{
+
+    
+    /* border: 2px solid black; */
+    float: left;
+    /* border: 2px solid black; */
+    color: gainsboro;
+    margin: 7px;
+    /* padding-right: 10px; */
+    padding:6px 15px 6px 0px ;
+}
+.curve1{
+    width: 1136px;
+    height: 90%;
+    /* border: 2px solid black; */
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    position: relative;
+    border-bottom-left-radius: 30% ;
+    border-bottom-right-radius: 30% ;
+    top: 125px;
+    left: 83px;
+    overflow: hidden;
+}
+#img2{
+    height: 550px;
+    width: 100%;    
+    object-fit: cover;
+}
+#heading2{
+    color: rgba(255, 255, 255, 0.927);
+}
+.data1{
+        background-color: rgba(139, 102, 54, 0.663);
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        padding: 19px;
+    }
+    #para2{
+        color: rgba(255, 255, 255, 0.927);
+       
+        margin-top: 30px;
+    }
+    .liborder{
+        border-right: 2px solid black;
+        
+    }
+    #button1{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 150px;
+        border-radius: 15px;
+        background-color: rgba(144, 116, 4, 0.73);
+        position: absolute;
+        top: 200px;
+        left: 200px;
+    }
+.body{
+    background-color: rgba(163, 14, 136, 0.232);
+    width: 100%;
+    height: 920px;
+}
+.box1{
+    /* border: 2px solid black; */
+    height: 400px;
+    width: 25%;
+    position: absolute;
+    top: 450px;
+    left: 90px;
+}
+.box2{
+    /* border: 2px solid black; */
+    height: 400px;
+    width: 25%;
+    position: absolute;
+    top: 450px;
+    left: 485px;
+}
+.box3{
+    /* border: 2px solid black;  */
+    height: 400px;
+    width: 25%;
+    position: absolute;
+    top: 450px;
+    left: 900px;
+}
+.box{
+    border-radius: 30% 30% 30% 30% / 10px 10px 10px 10px;
+    height: 670px;
+    background-color: white;
+}
+.sec1{
+    background-color: rgb(109, 5, 5);
+    height: 10px;
+    width: 240px;
+    position: absolute;
+    right:30px;
+    top: 15px;
+    padding: 20px;
+    padding-left: 50px;
+    color: rgba(255, 255, 255, 0.927);   
+}   
+#sec2{
+    background-color: rgb(77, 98, 5);
+}    
+#sec3{
+    background-color: rgba(0, 64, 87, 0.881);
+}  
+.img3{
+    height: 120px;
+    width: 84%;
+    position: absolute;
+    top: 60px;
+    padding: 20px;
+}  
+.para3{
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    width: 280px;
+    line-height: 20px;
+
+}
+#button2{
+    color: white;
+    background-color: burlywood;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    padding-top: 3px;
+    padding-bottom:3px;
+    top: 320px;
+    left: 180px;
+}
+.section3{
+    position: relative;
+    top: 300px;
+}
+.img4{
+    height: 50px;
+    /* width: 20px; */
+}
+.part1{
+    /* border: 2px solid black; */
+    height: 100px;
+    width: 283px;
+    position: absolute; 
+    top: 80px;
+}
+.part2{
+    position: absolute;
+    top: 190px;
+}
+.part3{
+    position: absolute;
+    top: 320px;
+}
+.part4{
+    position: absolute;
+    top: 440px;
+}
+.part5{
+    position: absolute;
+    top: 550px;
+}
+.img5{
+    height: 90px;
+}
+.para6{
+    position: absolute;
+    top: 18px;
+    left: 90px;
+}
+.part2_img{
+    width: 80px;
+    position: absolute;
+    bottom: 15px;
+    left: 8px;
+}
+.part3_img{
+    position: absolute;
+    right: 180px;
+}
+.part4_img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+.footer{
+    background-color:rgba(185, 0, 92, 0.439);
+    width: 100%;
+    height: 200px;
+}
+.curve2{
+    border:2px solid black;
+    height: 230px;
+    width: 1140px;
+    position: absolute;
+    left: 80px;
+    top: 1180px;
+    background-color: rgb(58, 3, 27);
+    border-radius: 30% 30% 0 0 / 60px 60px 0 0;
+}
+.footer1{
+    /* border: 2px solid springgreen; */
+    width: 270px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+.footer2{
+    /* border: 2px solid springgreen; */
+    width: 270px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    left: 350px;
+}
+.footer3{
+    /* border: 2px solid springgreen; */
+    width: 270px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    left: 650px;
+}
+.footer4{
+    /* border: 2px solid springgreen; */
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    left: 950px;
+}
+.para7{
+    padding-top: 10px;
+    color: white;
+}
+input{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    margin-top: 10px;
+}
+#button3{
+    position: absolute;
+    top: 120px;
+    left: 75px;
+    background-color: rgba(185, 0, 92, 0.557);
+    color: whitesmoke ;
+}
+.footer5{
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+h3{
+    color: white;
+}
+</style>
+<body>
+    <div class="header">
+      <div class="header1">
+        <img id="img1" src="/pic3.png" alt="">
+            <div class="header2">
+                <h1 id="heading1"><font color="yellow">Education</font>Website</h1>
+                 <p id="para1">created by chaudary.com</p>
+            </div>  
+            <div class="nav">
+                <ul>
+                    <li class="liborder">
+                        Home
+                    </li>
+                    <li class="liborder">
+                        About us
+                    </li>
+                    <li class="liborder">
+                        Students
+                    </li>
+                    <li class="liborder">
+                        Faculty
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+               </ul> 
+            </div>        
+     </div>
+        <div class="curve1">
+            <img id="img2" src="/pic5.jpg" alt="">
+            <div class="data1">
+                <h2 id="heading2">Lorem ipsum dolor sit <br>amet consectetur</h2>
+                <p id="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo in asperiores ea ipsam quia? Quasi nihil commodi aut quaerat deleniti obcaecati quidem aliquid.</p>
+                <button id="button1">Learn more...</button>
+            </div>
+            
+        </div>
+ </div>
+ <div class="body">
+    <div class="box1 box" >
+        <section class="sec1"  id="sec1">
+        Lorem ipsum dolor
+        </section>
+        <div class="section2">
+
+         <img class="img3" src="/pic1.jpg" alt="">
+            <p class="para3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sapiente quidem explicabo aliquam, tempore ipsam illum culpa perferendis ut assumenda.
+            </p>
+            <button id="button2">See more...</button>
+        </div>
+        <div class="section3">
+
+         <img class="img3" src="/pic2.jpg" alt="">
+            <p class="para3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sapiente quidem explicabo aliquam, tempore ipsam illum culpa perferendis ut assumenda.
+            </p>
+            <button id="button2">See more...</button>
+        </div>
+
+    </div>
+    <div class="box2 box" >
+        <section class="sec1" id="sec2">
+            Lorem ipsum dolor
+        </section>
+
+      <div class="part1">
+        <img class="img5" src="/pic8.jpg" alt="">
+        <p class="para6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id fugit</p>
+      </div>
+      <div class="part1 part2">
+        <img class="img5 part2_img" src="/pic9.jpg" alt="">
+        <p class="para6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id fugit</p>
+      </div>
+      <div class="part1 part3">
+        <img class="img5 part3_img" src="/pic10.jpg" alt="">
+        <p class="para6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id fugit</p>
+      </div>
+      <div class="part1 part4">
+        <img class="img5 part4_img" src="/pic11.jpg" alt="">
+        <p class="para6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id fugit</p>
+      </div>
+      <div class="part1 part5">
+        <img class="img5 part5_img" src="/pic12.jpg" alt="">
+        <p class="para6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id fugit</p>
+      </div>
+
+
+
+
+
+    </div>
+    <div class="box3 box" >
+        <section class="sec1" id="sec3">
+            Lorem ipsum dolor
+            </section>
+            <div class="section2">
+
+                <img class="img3" src="/pic3.jpg" alt="">
+                   <p class="para3">
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sapiente quidem explicabo aliquam, tempore ipsam illum culpa perferendis ut assumenda.
+                   </p>
+                   <button id="button2">See more...</button>
+               </div>
+               <div class="section3">
+       
+                <img class="img3" src="/pic7.jpg" alt="">
+                   <p class="para3">
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sapiente quidem explicabo aliquam, tempore ipsam illum culpa perferendis ut assumenda.
+                   </p>
+                   <button id="button2">See more...</button>
+               </div>
+    </div>
+ </div>
+ <div class="footer">
+    <div class="curve2">
+        <div class="footer1">
+            <h3>Lorem ipsum dolor</h3>
+            <p class="para7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ullam quas consectetur quia molestiae repellendus velit corporis eos labore?</p>
+        </div>
+        <div class="footer2">
+            <h3>Lorem ipsum dolor</h3>
+            <p class="para7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ullam quas consectetur quia molestiae repellendus velit corporis eos labore?</p>
+        </div>
+        <div class="footer3">
+            <h3>Lorem ipsum dolor</h3>
+            <p class="para7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ullam quas consectetur quia molestiae repellendus velit corporis eos labore?</p>
+        </div>
+        <div class="footer4">
+            <h3>Newsletter</h3>
+            <input type="text" placeholder="your name..." size="17%">
+            <input type="email" placeholder="your email..." size="17%">
+            <button id="button3">Subscribe</button>
+        </div>
+        <div class="footer5">
+            Template created by Chaudary.com. All rights resurved 
+        </div>
+    </div>
+ </div>
+    
+</body>
+</html>
